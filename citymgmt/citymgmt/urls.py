@@ -22,3 +22,4 @@ urlpatterns = [
     path('', include('illustrations.urls')),
     path('', include('db_api.urls'))
 ]
+

@@ -1,0 +1,731 @@
+[
+{
+   "metadata":null,
+   "position": {
+      "lat": 53.359562,
+      "lng": -6.228198
+    },
+   "data":{
+      "datetime":"2019-03-06T19:00:00Z",
+      "data_available":true,
+      "indexes":{
+         "baqi":{
+            "display_name":"BreezoMeter AQI",
+            "aqi":62,
+            "aqi_display":"62",
+            "color":"#B5E21E",
+            "category":"Good air quality",
+            "dominant_pollutant":"pm10"
+         }
+      },
+      "pollutants":{
+         "co":{
+            "display_name":"CO",
+            "full_name":"Carbon monoxide",
+            "concentration":{
+               "value":0.24,
+               "units":"ppb"
+            }
+         },
+         "no2":{
+            "display_name":"NO2",
+            "full_name":"Nitrogen dioxide",
+            "concentration":{
+               "value":8.97,
+               "units":"ppb"
+            }
+         },
+         "o3":{
+            "display_name":"O3",
+            "full_name":"Ozone",
+            "concentration":{
+               "value":25.39,
+               "units":"ppb"
+            }
+         },
+         "pm10":{
+            "display_name":"PM10",
+            "full_name":"Inhalable particulate matter (<10\u00b5m)",
+            "concentration":{
+               "value":41.72,
+               "units":"ug/m3"
+            }
+         },
+         "pm25":{
+            "display_name":"PM2.5",
+            "full_name":"Fine particulate matter (<2.5\u00b5m)",
+            "concentration":{
+               "value":20.71,
+               "units":"ug/m3"
+            }
+         },
+         "so2":{
+            "display_name":"SO2",
+            "full_name":"Sulfur dioxide",
+            "concentration":{
+               "value":0.59,
+               "units":"ppb"
+            }
+         }
+      }
+   },
+   "error":null
+},
+
+{
+   "metadata":null,
+   "position": {
+      "lat": 53.350562,
+      "lng": -6.258198
+    },
+   "data":{
+      "datetime":"2019-03-06T19:00:00Z",
+      "data_available":true,
+      "indexes":{
+         "baqi":{
+            "display_name":"BreezoMeter AQI",
+            "aqi":66,
+            "aqi_display":"66",
+            "color":"#B5E21E",
+            "category":"Good air quality",
+            "dominant_pollutant":"pm10"
+         }
+      },
+      "pollutants":{
+         "co":{
+            "display_name":"CO",
+            "full_name":"Carbon monoxide",
+            "concentration":{
+               "value":0.42,
+               "units":"ppb"
+            }
+         },
+         "no2":{
+            "display_name":"NO2",
+            "full_name":"Nitrogen dioxide",
+            "concentration":{
+               "value":10.97,
+               "units":"ppb"
+            }
+         },
+         "o3":{
+            "display_name":"O3",
+            "full_name":"Ozone",
+            "concentration":{
+               "value":32.39,
+               "units":"ppb"
+            }
+         },
+         "pm10":{
+            "display_name":"PM10",
+            "full_name":"Inhalable particulate matter (<10\u00b5m)",
+            "concentration":{
+               "value":35.72,
+               "units":"ug/m3"
+            }
+         },
+         "pm25":{
+            "display_name":"PM2.5",
+            "full_name":"Fine particulate matter (<2.5\u00b5m)",
+            "concentration":{
+               "value":26.71,
+               "units":"ug/m3"
+            }
+         },
+         "so2":{
+            "display_name":"SO2",
+            "full_name":"Sulfur dioxide",
+            "concentration":{
+               "value":0.90,
+               "units":"ppb"
+            }
+         }
+      }
+   },
+   "error":null
+},
+
+{
+   "metadata":null,
+   "position": {
+      "lat": 53.335662,
+      "lng": -6.238198
+    },
+   "data":{
+      "datetime":"2019-03-06T19:00:00Z",
+      "data_available":true,
+      "indexes":{
+         "baqi":{
+            "display_name":"BreezoMeter AQI",
+            "aqi":81,
+            "aqi_display":"62",
+            "color":"#B5E21E",
+            "category":"Good air quality",
+            "dominant_pollutant":"pm10"
+         }
+      },
+      "pollutants":{
+         "co":{
+            "display_name":"CO",
+            "full_name":"Carbon monoxide",
+            "concentration":{
+               "value":0.44,
+               "units":"ppb"
+            }
+         },
+         "no2":{
+            "display_name":"NO2",
+            "full_name":"Nitrogen dioxide",
+            "concentration":{
+               "value":10.63,
+               "units":"ppb"
+            }
+         },
+         "o3":{
+            "display_name":"O3",
+            "full_name":"Ozone",
+            "concentration":{
+               "value":42.39,
+               "units":"ppb"
+            }
+         },
+         "pm10":{
+            "display_name":"PM10",
+            "full_name":"Inhalable particulate matter (<10\u00b5m)",
+            "concentration":{
+               "value":56.72,
+               "units":"ug/m3"
+            }
+         },
+         "pm25":{
+            "display_name":"PM2.5",
+            "full_name":"Fine particulate matter (<2.5\u00b5m)",
+            "concentration":{
+               "value":26.71,
+               "units":"ug/m3"
+            }
+         },
+         "so2":{
+            "display_name":"SO2",
+            "full_name":"Sulfur dioxide",
+            "concentration":{
+               "value":1.10,
+               "units":"ppb"
+            }
+         }
+      }
+   },
+   "error":null
+},
+
+{
+   "metadata":null,
+   "position": {
+      "lat": 53.351562,
+      "lng": -6.288198
+    },
+   "data":{
+      "datetime":"2019-03-06T19:00:00Z",
+      "data_available":true,
+      "indexes":{
+         "baqi":{
+            "display_name":"BreezoMeter AQI",
+            "aqi":26,
+            "aqi_display":"62",
+            "color":"#B5E21E",
+            "category":"Good air quality",
+            "dominant_pollutant":"pm10"
+         }
+      },
+      "pollutants":{
+         "co":{
+            "display_name":"CO",
+            "full_name":"Carbon monoxide",
+            "concentration":{
+               "value":0.16,
+               "units":"ppb"
+            }
+         },
+         "no2":{
+            "display_name":"NO2",
+            "full_name":"Nitrogen dioxide",
+            "concentration":{
+               "value":4.97,
+               "units":"ppb"
+            }
+         },
+         "o3":{
+            "display_name":"O3",
+            "full_name":"Ozone",
+            "concentration":{
+               "value":10.39,
+               "units":"ppb"
+            }
+         },
+         "pm10":{
+            "display_name":"PM10",
+            "full_name":"Inhalable particulate matter (<10\u00b5m)",
+            "concentration":{
+               "value":11.72,
+               "units":"ug/m3"
+            }
+         },
+         "pm25":{
+            "display_name":"PM2.5",
+            "full_name":"Fine particulate matter (<2.5\u00b5m)",
+            "concentration":{
+               "value":10.71,
+               "units":"ug/m3"
+            }
+         },
+         "so2":{
+            "display_name":"SO2",
+            "full_name":"Sulfur dioxide",
+            "concentration":{
+               "value":0.10,
+               "units":"ppb"
+            }
+         }
+      }
+   },
+   "error":null
+},
+
+{
+   "metadata":null,
+   "position": {
+      "lat": 53.360562,
+      "lng": -6.298198
+    },
+   "data":{
+      "datetime":"2019-03-06T19:00:00Z",
+      "data_available":true,
+      "indexes":{
+         "baqi":{
+            "display_name":"BreezoMeter AQI",
+            "aqi":90,
+            "aqi_display":"62",
+            "color":"#B5E21E",
+            "category":"Good air quality",
+            "dominant_pollutant":"pm10"
+         }
+      },
+      "pollutants":{
+         "co":{
+            "display_name":"CO",
+            "full_name":"Carbon monoxide",
+            "concentration":{
+               "value":0.90,
+               "units":"ppb"
+            }
+         },
+         "no2":{
+            "display_name":"NO2",
+            "full_name":"Nitrogen dioxide",
+            "concentration":{
+               "value":20.97,
+               "units":"ppb"
+            }
+         },
+         "o3":{
+            "display_name":"O3",
+            "full_name":"Ozone",
+            "concentration":{
+               "value":49.39,
+               "units":"ppb"
+            }
+         },
+         "pm10":{
+            "display_name":"PM10",
+            "full_name":"Inhalable particulate matter (<10\u00b5m)",
+            "concentration":{
+               "value":81.72,
+               "units":"ug/m3"
+            }
+         },
+         "pm25":{
+            "display_name":"PM2.5",
+            "full_name":"Fine particulate matter (<2.5\u00b5m)",
+            "concentration":{
+               "value":63.71,
+               "units":"ug/m3"
+            }
+         },
+         "so2":{
+            "display_name":"SO2",
+            "full_name":"Sulfur dioxide",
+            "concentration":{
+               "value":2.59,
+               "units":"ppb"
+            }
+         }
+      }
+   },
+   "error":null
+},
+
+{
+   "metadata":null,
+   "position": {
+      "lat": 53.349562,
+      "lng": -6.281198
+    },
+   "data":{
+      "datetime":"2019-03-06T19:00:00Z",
+      "data_available":true,
+      "indexes":{
+         "baqi":{
+            "display_name":"BreezoMeter AQI",
+            "aqi":35,
+            "aqi_display":"62",
+            "color":"#B5E21E",
+            "category":"Good air quality",
+            "dominant_pollutant":"pm10"
+         }
+      },
+      "pollutants":{
+         "co":{
+            "display_name":"CO",
+            "full_name":"Carbon monoxide",
+            "concentration":{
+               "value":0.35,
+               "units":"ppb"
+            }
+         },
+         "no2":{
+            "display_name":"NO2",
+            "full_name":"Nitrogen dioxide",
+            "concentration":{
+               "value":18.97,
+               "units":"ppb"
+            }
+         },
+         "o3":{
+            "display_name":"O3",
+            "full_name":"Ozone",
+            "concentration":{
+               "value":2.39,
+               "units":"ppb"
+            }
+         },
+         "pm10":{
+            "display_name":"PM10",
+            "full_name":"Inhalable particulate matter (<10\u00b5m)",
+            "concentration":{
+               "value":59.72,
+               "units":"ug/m3"
+            }
+         },
+         "pm25":{
+            "display_name":"PM2.5",
+            "full_name":"Fine particulate matter (<2.5\u00b5m)",
+            "concentration":{
+               "value":32.71,
+               "units":"ug/m3"
+            }
+         },
+         "so2":{
+            "display_name":"SO2",
+            "full_name":"Sulfur dioxide",
+            "concentration":{
+               "value":0.99,
+               "units":"ppb"
+            }
+         }
+      }
+   },
+   "error":null
+},
+
+{
+   "metadata":null,
+   "position": {
+      "lat": 53.350562,
+      "lng": -6.268198
+    },
+   "data":{
+      "datetime":"2019-03-06T19:00:00Z",
+      "data_available":true,
+      "indexes":{
+         "baqi":{
+            "display_name":"BreezoMeter AQI",
+            "aqi":40,
+            "aqi_display":"62",
+            "color":"#B5E21E",
+            "category":"Good air quality",
+            "dominant_pollutant":"pm10"
+         }
+      },
+      "pollutants":{
+         "co":{
+            "display_name":"CO",
+            "full_name":"Carbon monoxide",
+            "concentration":{
+               "value":0.40,
+               "units":"ppb"
+            }
+         },
+         "no2":{
+            "display_name":"NO2",
+            "full_name":"Nitrogen dioxide",
+            "concentration":{
+               "value":13.97,
+               "units":"ppb"
+            }
+         },
+         "o3":{
+            "display_name":"O3",
+            "full_name":"Ozone",
+            "concentration":{
+               "value":35.39,
+               "units":"ppb"
+            }
+         },
+         "pm10":{
+            "display_name":"PM10",
+            "full_name":"Inhalable particulate matter (<10\u00b5m)",
+            "concentration":{
+               "value":52.72,
+               "units":"ug/m3"
+            }
+         },
+         "pm25":{
+            "display_name":"PM2.5",
+            "full_name":"Fine particulate matter (<2.5\u00b5m)",
+            "concentration":{
+               "value":26.71,
+               "units":"ug/m3"
+            }
+         },
+         "so2":{
+            "display_name":"SO2",
+            "full_name":"Sulfur dioxide",
+            "concentration":{
+               "value":0.79,
+               "units":"ppb"
+            }
+         }
+      }
+   },
+   "error":null
+},
+
+{
+   "metadata":null,
+   "position": {
+      "lat": 53.351562,
+      "lng": -6.2690198
+    },
+   "data":{
+      "datetime":"2019-03-06T19:00:00Z",
+      "data_available":true,
+      "indexes":{
+         "baqi":{
+            "display_name":"BreezoMeter AQI",
+            "aqi":110,
+            "aqi_display":"62",
+            "color":"#B5E21E",
+            "category":"Good air quality",
+            "dominant_pollutant":"pm10"
+         }
+      },
+      "pollutants":{
+         "co":{
+            "display_name":"CO",
+            "full_name":"Carbon monoxide",
+            "concentration":{
+               "value":1.10,
+               "units":"ppb"
+            }
+         },
+         "no2":{
+            "display_name":"NO2",
+            "full_name":"Nitrogen dioxide",
+            "concentration":{
+               "value":63.97,
+               "units":"ppb"
+            }
+         },
+         "o3":{
+            "display_name":"O3",
+            "full_name":"Ozone",
+            "concentration":{
+               "value":85.39,
+               "units":"ppb"
+            }
+         },
+         "pm10":{
+            "display_name":"PM10",
+            "full_name":"Inhalable particulate matter (<10\u00b5m)",
+            "concentration":{
+               "value":92.72,
+               "units":"ug/m3"
+            }
+         },
+         "pm25":{
+            "display_name":"PM2.5",
+            "full_name":"Fine particulate matter (<2.5\u00b5m)",
+            "concentration":{
+               "value":66.71,
+               "units":"ug/m3"
+            }
+         },
+         "so2":{
+            "display_name":"SO2",
+            "full_name":"Sulfur dioxide",
+            "concentration":{
+               "value":2.59,
+               "units":"ppb"
+            }
+         }
+      }
+   },
+   "error":null
+},
+
+{
+   "metadata":null,
+   "position": {
+      "lat": 53.339562,
+      "lng": -6.278198
+    },
+   "data":{
+      "datetime":"2019-03-06T19:00:00Z",
+      "data_available":true,
+      "indexes":{
+         "baqi":{
+            "display_name":"BreezoMeter AQI",
+            "aqi":70,
+            "aqi_display":"62",
+            "color":"#B5E21E",
+            "category":"Good air quality",
+            "dominant_pollutant":"pm10"
+         }
+      },
+      "pollutants":{
+         "co":{
+            "display_name":"CO",
+            "full_name":"Carbon monoxide",
+            "concentration":{
+               "value":1.89,
+               "units":"ppb"
+            }
+         },
+         "no2":{
+            "display_name":"NO2",
+            "full_name":"Nitrogen dioxide",
+            "concentration":{
+               "value":17.97,
+               "units":"ppb"
+            }
+         },
+         "o3":{
+            "display_name":"O3",
+            "full_name":"Ozone",
+            "concentration":{
+               "value":32.39,
+               "units":"ppb"
+            }
+         },
+         "pm10":{
+            "display_name":"PM10",
+            "full_name":"Inhalable particulate matter (<10\u00b5m)",
+            "concentration":{
+               "value":52.72,
+               "units":"ug/m3"
+            }
+         },
+         "pm25":{
+            "display_name":"PM2.5",
+            "full_name":"Fine particulate matter (<2.5\u00b5m)",
+            "concentration":{
+               "value":32.71,
+               "units":"ug/m3"
+            }
+         },
+         "so2":{
+            "display_name":"SO2",
+            "full_name":"Sulfur dioxide",
+            "concentration":{
+               "value":0.799,
+               "units":"ppb"
+            }
+         }
+      }
+   },
+   "error":null
+},
+
+{
+   "metadata":null,
+   "position": {
+      "lat": 53.353562,
+      "lng": -6.280198
+    },
+   "data":{
+      "datetime":"2019-03-06T19:00:00Z",
+      "data_available":true,
+      "indexes":{
+         "baqi":{
+            "display_name":"BreezoMeter AQI",
+            "aqi":17,
+            "aqi_display":"62",
+            "color":"#B5E21E",
+            "category":"Good air quality",
+            "dominant_pollutant":"pm10"
+         }
+      },
+      "pollutants":{
+         "co":{
+            "display_name":"CO",
+            "full_name":"Carbon monoxide",
+            "concentration":{
+               "value":0.14,
+               "units":"ppb"
+            }
+         },
+         "no2":{
+            "display_name":"NO2",
+            "full_name":"Nitrogen dioxide",
+            "concentration":{
+               "value":2.97,
+               "units":"ppb"
+            }
+         },
+         "o3":{
+            "display_name":"O3",
+            "full_name":"Ozone",
+            "concentration":{
+               "value":5.39,
+               "units":"ppb"
+            }
+         },
+         "pm10":{
+            "display_name":"PM10",
+            "full_name":"Inhalable particulate matter (<10\u00b5m)",
+            "concentration":{
+               "value":4.72,
+               "units":"ug/m3"
+            }
+         },
+         "pm25":{
+            "display_name":"PM2.5",
+            "full_name":"Fine particulate matter (<2.5\u00b5m)",
+            "concentration":{
+               "value":2.71,
+               "units":"ug/m3"
+            }
+         },
+         "so2":{
+            "display_name":"SO2",
+            "full_name":"Sulfur dioxide",
+            "concentration":{
+               "value":0.09,
+               "units":"ppb"
+            }
+         }
+      }
+   },
+   "error":null
+}
+]
