@@ -55,12 +55,13 @@ def fetch_pollution_api_data(db_file, table, bid, lat, lon, rt_db_file, key_itr)
 		db.write_to_db(rt_db_file, table, pollution_data)
 
 
-def fetch_events_api_data(db_file, table, lat, lon):
+def fetch_events_api_data(db_file, table, lat, lon, rt_db_file):
 	event_key = "sig_id=239072385&sig=7c49a476cedde45274f33d3cc95137d5478346c3";
 	events_api = "https://api.meetup.com/2/open_events?and_text=False&offset=0&format=json&lon="+lon+"&limited_events=False&photo-host=public&page=20&radius=25.0&lat="+lat+"&desc=False&status=upcoming&"+event_key
 
 	data = get_response(events_api)
 	events_data = db.get_event_data()
+	db.update_realtime_db(rt_db_file, table, events_data)
 	to_write_data = events_data
 	for i in data['results']:
 		if 'venue' in i and 'Dublin' in i['venue']['city']:
@@ -75,6 +76,7 @@ def fetch_events_api_data(db_file, table, lat, lon):
 							events_data[key] = str(events_data[key])[:10]
 
 			db.write_to_db(db_file, table, events_data)
+			db.write_to_db(rt_db_file, table, events_data)
 
 
 def get_traffic_api_data(lat1, lon1, lat2, lon2):

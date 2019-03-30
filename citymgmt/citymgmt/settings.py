@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'realtime.apps.RealtimeConfig',
     'illustrations.apps.IllustrationsConfig',
+    'db_api.apps.DbApiConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

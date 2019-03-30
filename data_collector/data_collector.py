@@ -15,17 +15,17 @@ pollution_data = db.get_pollution_data()
 event_data = db.get_event_data()
 traffic_data = db.get_traffic_data()
 
-database_file = "mobility_db"
+database_file = "../citymgmt/mobility_db"
 
-tables = ['bike_availability', 'pollusion_level', 'traffic_info','event_info']
-rt_db_files = ['rt_bike_db', 'rt_pollusion_db', 'rt_traffic_db','rt_events_db']
+tables = ['bike_availability', 'pollution_level', 'traffic_info','event_info']
+rt_db_files = ['../citymgmt/rt_bike_db', '../citymgmt/rt_pollution_db', '../citymgmt/rt_traffic_db','../citymgmt/rt_events_db']
 
 tables_data = {tables[0]:bike_data, tables[1]:pollution_data, tables[2]:traffic_data, tables[3]:event_data}
 tables_db = {tables[0]:rt_db_files[0], tables[1]:rt_db_files[1], tables[2]:rt_db_files[2], tables[3]:rt_db_files[3]}
 
-#create_tables(database_file, tables_data)
+create_tables(database_file, tables_data)
 
-#df.fetch_bike_api_data(database_file, tables[0], rt_db_files[0])
+df.fetch_bike_api_data(database_file, tables[0], rt_db_files[0])
 #df.fetch_pollution_api_data(database_file, tables[1], latlonid[0], latlonid[1], latlonid[2], rt_db_files[1])
 #df.fetch_traffic_api_data(database_file, tables[2], latlonid[0], lat, lon, latlonid[1], latlonid[2], rt_db_files[2])
 
@@ -48,8 +48,8 @@ while True:
 	df.fetch_pollution_api_data(database_file, tables[1], latlonid[0], latlonid[1], latlonid[2], rt_db_files[1], key_itr)
 	key_itr += 1
 	df.fetch_traffic_api_data(database_file, tables[2], latlonid[0], lat, lon, latlonid[1], latlonid[2], rt_db_files[2])
-	if current_date > max_date:
+	if current_date == max_date:
 		max_date = current_date
-		df.fetch_events_api_data(database_file, tables[3], lat, lon)
-	print(key_itr)
+		df.fetch_events_api_data(database_file, tables[3], lat, lon, rt_db_files[3])
+	print('Completed', key_itr)
 	time.sleep(60)
