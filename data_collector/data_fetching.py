@@ -26,12 +26,16 @@ def fetch_bike_api_data(db_file, table, rt_db_file):
 		db.write_to_db(rt_db_file, table, bike_data)
 
 
-def fetch_pollution_api_data(db_file, table, bid, lat, lon, rt_db_file):
+def fetch_pollution_api_data(db_file, table, bid, lat, lon, rt_db_file, key_itr):
 	pollution_data = db.get_pollution_data()
 	db.update_realtime_db(rt_db_file, table, pollution_data)
 	for x, i, j in zip(bid, lat, lon):
-		#pollution_key = "a348e982b97d48ddbc0f5becb26a8e7b"
-		pollution_key = "b5130bf2c1974aa9929e240212237a6c"
+		if key_itr%2 == 0:
+			pollution_key = "a348e982b97d48ddbc0f5becb26a8e7b"
+		else:
+			pollution_key = "8c970d0f7c3c48c5944b94de6aeb1e96"
+		#pollution_key = "b5130bf2c1974aa9929e240212237a6c"
+		
 		pollution_api = "https://api.breezometer.com/air-quality/v2/current-conditions?lat="+i+"&lon="+j+"&key="+pollution_key+"&features=breezometer_aqi,pollutants_concentrations"
 		data =  get_response(pollution_api)
 		
