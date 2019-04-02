@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
 	<script src="{% static "assets/vendor/bootstrap/js/bootstrap.bundle.js" %}  "></script>
     <link rel="stylesheet" href="{% static "assets/vendor/bootstrap/css/bootstrap.min.css" %}">
-    <link href="{% static "assets/vendor/fonts/circular-std/style.css" %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static "assets/vendor/fonts/circular-std/style.css" %}">
     <link rel="stylesheet" href="{% static "assets/libs/css/style.css" %}">
     <link rel="stylesheet" href="{% static "assets/vendor/fonts/fontawesome/css/fontawesome-all.css" %}">
     <link rel="stylesheet" href="{% static "assets/vendor/charts/chartist-bundle/chartist.css" %}">
@@ -63,7 +63,7 @@
                                             <a class="nav-link" href="{%  url 'realtimepollution' %}">Pollution</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="dashboard-sales.html">Bikes</a>
+                                            <a class="nav-link" href="{%  url 'bikestatus' %}">Bikes</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="dashboard-finance.html">Events</a>

@@ -8,3 +8,6 @@ class HomePageView(TemplateView):
 
 class RealTimePollutionView(TemplateView):
 	template_name = 'realtimepollution.html'
+
+class RealTimeBikeView(TemplateView):
+	template_name = 'realtimebike.html'
