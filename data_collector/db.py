@@ -16,9 +16,9 @@ def generate_sql_write(dic, table):
         if value is None:
             value = 0.0
         if type(value) == str:
-        	query += "\"" + str(value) + "\","
+            query += "\"" + str(value) + "\","
         else:
-        	query += str(value) + ","
+            query += str(value) + ","
     query = query[:-1] + ")"
     #print(query)
     return query
@@ -65,31 +65,31 @@ def get_pollution_data():
         "so2": "REAL",
         "pm10": "REAL",
         "pm25": "REAL"
-        }
+    }
     return d
 
 def get_event_data():
     d = {'name':"TEXT",
-        'address_1':"TEXT",
-        'time': "TEXT",
-        'duration':"TEXT",
-        'lat':"REAL",
-        'lon':"REAL",
-        'yes_rsvp_count':"REAL",
-        'maybe_rsvp_count':"REAL"
-    }
+         'address_1':"TEXT",
+         'time': "TEXT",
+         'duration':"TEXT",
+         'lat':"REAL",
+         'lon':"REAL",
+         'yes_rsvp_count':"REAL",
+         'maybe_rsvp_count':"REAL"
+         }
     return d
 
 def get_traffic_data():
     d = {'number':"REAL",
-        'distance':"REAL",
-        'duration':"REAL"}
+         'distance':"REAL",
+         'duration':"REAL"}
     return d
 
 def get_test_data():
     d = {'id':"REAL",
-        'test1':"REAL",
-        'test2':"TEXT"}
+         'test1':"REAL",
+         'test2':"TEXT"}
     return d
 
 
@@ -126,7 +126,7 @@ def get_columns(sqlite_file, table):
     for i in cur.description:
         columns.append(i[0])
     return columns
-        #print(i[0], end=' ')
+    #print(i[0], end=' ')
 
 
 def get_all_data(sqlite_file, table):
