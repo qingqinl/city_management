@@ -1,11 +1,11 @@
 var myChart = echarts.init(document.getElementById('main'));
 
-$.getJSON('/static/json/bikes.json', function(data) {
+$.getJSON('http://localhost:8000/api/bike', function(data) {
 
   var convertData = function (data) {
   var res = [];
   for (var i = 0; i < data.length; i++) {
-    var geoCoord = [data[i].position.lng, data[i].position.lat];
+    var geoCoord = [data[i].lng, data[i].lat];
     if (geoCoord) {
       res.push({
         name: data[i].name,
@@ -21,8 +21,7 @@ $.getJSON('/static/json/bikes.json', function(data) {
   for (var i = 0; i < data.length; i++) {
     var availbikenumber = data[i].available_bikes;
 
-      resOU = resOU.concat(availbikenumber
-      );
+      resOU = resOU.concat(availbikenumber);
   }
   return resOU;
 };
@@ -32,8 +31,7 @@ var convertDataforOUN = function (data) {
   for (var i = 0; i < data.length; i++) {
     var availbikenumber = data[i].name;
 
-      resOU = resOU.concat(availbikenumber
-      );
+      resOU = resOU.concat(availbikenumber);
   }
   return resOU;
 };
