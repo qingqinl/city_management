@@ -20,6 +20,7 @@ database_file = "../citymgmt/mobility_db"
 tables = ['bike_availability', 'pollution_level', 'traffic_info','event_info']
 tables_data = {tables[0]:bike_data, tables[1]:pollution_data, tables[2]:traffic_data, tables[3]:event_data}
 
+create_tables(database_file, tables_data)
 
 bike_db_file = '../citymgmt/rt_bike_db'
 lat = db.read_column_from_db(bike_db_file,'lat','bike_availability')

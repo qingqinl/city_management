@@ -56,6 +56,8 @@ def get_bus_data():
 
 def get_pollution_data():
     d = {
+        'lat': "REAL",
+        'lng': "REAL",
         'number':"REAL",
         'aqi':"REAL",
         "dominant_pollutant":"TEXT",

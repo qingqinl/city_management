@@ -1,4 +1,4 @@
-var myChart = echarts.init(document.getElementById('main'));
+var myChart = echarts.init(document.getElementById('map'));
 
 $.getJSON('http://localhost:8000/api/bike', function(data) {
 

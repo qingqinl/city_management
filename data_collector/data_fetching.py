@@ -12,6 +12,7 @@ def get_response(api_link):
 
 def fetch_bike_api_data(db_file, table):
 	bike_key = "5a9fca8c93d0a38ba40af732c366af7863d6f8c5"
+	
 	bike_api = "https://api.jcdecaux.com/vls/v1/stations?contract=Dublin&apiKey="+bike_key
 	data = get_response(bike_api)
 	bike_data = db.get_bike_data()
@@ -29,7 +30,7 @@ def fetch_bike_api_data(db_file, table):
 def fetch_pollution_api_data(db_file, table, bid, lat, lon, key_itr):
 	pollution_data = db.get_pollution_data()
 	#db.update_realtime_db(rt_db_file, table, pollution_data)
-	for x, i, j in zip(bid, lat, lon):
+	for x, lt, ln in zip(bid, lat, lon):
 		if key_itr%2 == 0:
 			pollution_key = "8c970d0f7c3c48c5944b94de6aeb1e96"
 		else:
@@ -38,7 +39,7 @@ def fetch_pollution_api_data(db_file, table, bid, lat, lon, key_itr):
 		
 		#pollution_key = "b5130bf2c1974aa9929e240212237a6c"
 		
-		pollution_api = "https://api.breezometer.com/air-quality/v2/current-conditions?lat="+i+"&lon="+j+"&key="+pollution_key+"&features=breezometer_aqi,pollutants_concentrations"
+		pollution_api = "https://api.breezometer.com/air-quality/v2/current-conditions?lat="+lt+"&lon="+ln+"&key="+pollution_key+"&features=breezometer_aqi,pollutants_concentrations"
 		data =  get_response(pollution_api)
 		
 		#print(data)
@@ -53,6 +54,8 @@ def fetch_pollution_api_data(db_file, table, bid, lat, lon, key_itr):
 					if i in key:
 						pollution_data[key] = data['data']['pollutants'][key]['concentration']['value']
 		pollution_data['number'] = x
+		pollution_data['lat'] = lt
+		pollution_data['lng'] = ln
 		db.write_to_db(db_file, table, pollution_data)
 		#db.write_to_db(rt_db_file, table, pollution_data)
 
