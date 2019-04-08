@@ -25,7 +25,7 @@ SECRET_KEY = '#&28%@l86(7lmjz6thzq3s0wnf$+hjj@sby3_$n1pk0q-1^2##'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ec2-34-245-227-187.eu-west-1.compute.amazonaws.com','ec2-34-254-242-238.eu-west-1.compute.amazonaws.com','django','http://citymanagement2019-536194180.eu-west-1.elb.amazonaws.com']
+ALLOWED_HOSTS = ['ec2-34-245-227-187.eu-west-1.compute.amazonaws.com','ec2-34-254-242-238.eu-west-1.compute.amazonaws.com','django','http://citymanagement2019-536194180.eu-west-1.elb.amazonaws.com','localhost']
 
 
 # Application definition
