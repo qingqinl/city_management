@@ -83,7 +83,9 @@ def get_event_data():
     return d
 
 def get_traffic_data():
-    d = {'number':"REAL",
+    d = {'lat': "REAL",
+         'lng': "REAL",
+         'number':"REAL",
          'distance':"REAL",
          'duration':"REAL"}
     return d

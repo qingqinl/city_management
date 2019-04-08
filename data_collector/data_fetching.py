@@ -106,5 +106,7 @@ def fetch_traffic_api_data(db_file, table, bid, lat1, lon1, lat2, lon2):
 	for x, i, j in zip(bid, lat2, lon2):
 		traffic_data = get_traffic_api_data(lat1, lon1, i, j)
 		traffic_data['number'] = x
+		traffic_data['lat'] = i
+		traffic_data['lng'] = j
 		db.write_to_db(db_file, table, traffic_data)
 		#db.write_to_db(rt_db_file, table, traffic_data)
