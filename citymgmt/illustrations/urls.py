@@ -1,7 +1,9 @@
 from django.urls import path
 
-from .views import PopulationPredictionView
+from .views import PopulationPredictionView, BikePredictionView, PollutionPredictionView
 
 urlpatterns = [
-    path('population_prediction/', PopulationPredictionView.as_view(), name='PopulationPrediction'),
+    path('populationprediction/', PopulationPredictionView.as_view(), name='PopulationPrediction'),
+    path('bikeprediction/', BikePredictionView.as_view(), name='BikePrediction'),
+    path('pollutionprediction/', PollutionPredictionView.as_view(), name='PollutionPrediction'),
 ]
