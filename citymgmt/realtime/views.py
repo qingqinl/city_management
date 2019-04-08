@@ -11,3 +11,6 @@ class RealTimePollutionView(TemplateView):
 
 class RealTimeBikeView(TemplateView):
 	template_name = 'realtimebike.html'
+
+class RealTimeEventView(TemplateView):
+	template_name = 'realtimeevents.html'
