@@ -13,6 +13,8 @@ def fetch(cols, rows):
 			data[key] = val
 		api_data.append(data)
 	rs = json.dumps(api_data)
+	#with open('pollution.json', 'w') as outfile:
+	#	json.dump(api_data, outfile)
 	return rs
 
 

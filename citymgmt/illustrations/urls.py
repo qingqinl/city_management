@@ -1,7 +1,7 @@
 from django.urls import path
 
-from .views import IllustrationsView
+from .views import PopulationPredictionView
 
 urlpatterns = [
-    path('illustrations/', IllustrationsView.as_view(), name='illustrations'),
+    path('population_prediction/', PopulationPredictionView.as_view(), name='PopulationPrediction'),
 ]

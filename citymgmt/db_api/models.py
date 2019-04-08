@@ -69,6 +69,8 @@ class TrafficInfo(models.Model):
     index_id = models.IntegerField(primary_key=True, blank=False, null=False)
     timestamp = models.TextField(blank=False, null=False)
     number = models.FloatField(blank=False, null=False)
+    lat = models.FloatField(blank=False, null=False)
+    lng = models.FloatField(blank=False, null=False)
     distance = models.FloatField(blank=False, null=False)
     duration = models.FloatField(blank=False, null=False)
 
