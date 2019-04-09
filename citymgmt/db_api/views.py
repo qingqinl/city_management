@@ -3,15 +3,24 @@ from django.http import HttpResponse
 from .models import BikeAvailability, PollutionLevel, TrafficInfo, EventInfo
 import json
 import time
-
+import datetime
 
 def fetch(cols, rows):
 	api_data = []
+	t2 = 0
+	t1 = time.time()
+	
 	for row in rows:
 		data = {}
+		write_flag = False
 		for key, val in zip(cols, row):
-			data[key] = val
-		api_data.append(data)
+			if key == "timestamp":
+				t2 = datetime.datetime.utcfromtimestamp(float(val)).date()
+			if t2 == datetime.datetime.utcfromtimestamp(t1).date():
+				write_flag = True
+				data[key] = val
+		if(write_flag):
+			api_data.append(data)
 	rs = json.dumps(api_data)
 	#with open('pollution.json', 'w') as outfile:
 	#	json.dump(api_data, outfile)
@@ -63,7 +72,10 @@ def traffic_api(request):
 def events_api(request):
 	vals = EventInfo.objects.values_list()
 	lvals = list(vals)
-	rows = lvals[-15:]
+	rows = lvals[-35:]
+	rows = list(dict.fromkeys(rows))
+	print(rows)
 	cols = [f.name for f in EventInfo._meta.get_fields()]
 	json_resp = fetch(cols, rows)
 	return HttpResponse(json_resp)
+
