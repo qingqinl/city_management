@@ -78,4 +78,3 @@ def events_api(request):
 	cols = [f.name for f in EventInfo._meta.get_fields()]
 	json_resp = fetch(cols, rows)
 	return HttpResponse(json_resp)
-

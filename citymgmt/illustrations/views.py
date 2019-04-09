@@ -10,3 +10,9 @@ class BikePredictionView(TemplateView):
 
 class PollutionPredictionView(TemplateView):
 	template_name = 'pollution_prediction.html'
+
+class PollutionPopulationCorrelationView(TemplateView):
+	template_name = 'correlation_pp.html'
+
+class PollutionBikeCorrelationView(TemplateView):
+	template_name = 'correlation_pb.html'
