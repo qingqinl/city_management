@@ -6,7 +6,7 @@
 
             <link rel="stylesheet" href="{% static "assets/libs/css/style.css" %}">
             <link rel="stylesheet" href="{% static "css/home.css" %}">
-            <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+             <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
             <meta charset="utf-8">
 
         </head>
@@ -21,19 +21,10 @@
                         <div class="row">
                             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
                                 <div class="card">
-                                    <h5 class="card-header">Average City Travel Time</h5>
                                     <div class="card-body">
-                                        <div class="ct-chart ct-golden-section" style="height: 354px;"></div>
-                                        <div class="text-center">
-                                            <span class="legend-item mr-2">
-                                                    <span class="fa-xs text-primary mr-1 legend-tile"><i class="fa fa-fw fa-square-full"></i></span>
-                                            <span class="legend-text">Returning</span>
-                                            </span>
-                                            <span class="legend-item mr-2">
-
-                                                    <span class="fa-xs text-secondary mr-1 legend-tile"><i class="fa fa-fw fa-square-full"></i></span>
-                                            <span class="legend-text">First Time</span>
-                                            </span>
+                                        <h5 class="text-muted">Average City Travel Time</h5>
+                                        <div class="metric-value d-inline-block">
+                                            <h1 class="mb-1">29 Km/Hr</h1>
                                         </div>
                                     </div>
                                 </div>
@@ -43,13 +34,9 @@
                                     <div class="card-body">
                                         <h5 class="text-muted">Bike Usage</h5>
                                         <div class="metric-value d-inline-block">
-                                            <h1 class="mb-1">2099/Day</h1>
-                                        </div>
-                                        <div class="metric-label d-inline-block float-right text-success font-weight-bold">
-                                            <span><i class="fa fa-fw fa-arrow-down"></i></span><span>3.86%</span>
+                                            <h1 class="mb-1">2941/Day</h1>
                                         </div>
                                     </div>
-                                    <div id="sparkline-revenue2"></div>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -59,11 +46,7 @@
                                         <div class="metric-value d-inline-block">
                                             <h1 class="mb-1">62</h1>
                                         </div>
-                                        <div class="metric-label d-inline-block float-right text-primary font-weight-bold">
-                                            <span>-10%</span>
-                                        </div>
                                     </div>
-                                    <div id="sparkline-revenue3"></div>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
@@ -71,88 +54,71 @@
                                     <div class="card-body">
                                         <h5 class="text-muted">City Events Today</h5>
                                         <div class="metric-value d-inline-block">
-                                            <h1 class="mb-1">6</h1>
-                                        </div>
-                                        <div class="metric-label d-inline-block float-right text-secondary font-weight-bold">
-                                            <span>-2</span>
+                                            <h1 class="mb-1">19</h1>
                                         </div>
                                     </div>
-                                    <div id="sparkline-revenue4"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xl-9 col-lg-12 col-md-6 col-sm-12 col-12">
                                 <div class="card">
-                                    <h5 class="card-header">Dublinbike Over-usage and Under-usage</h5>
+                                    <h5 class="card-header">Dublinbike Over-usage</h5>
                                     <div class="card-body p-0">
                                         <div class="table-responsive">
                                             <table class="table">
                                                 <thead class="bg-light">
                                                     <tr class="border-0">
                                                         <th class="border-0">#</th>
-                                                        <th class="border-0">Id</th>
                                                         <th class="border-0">Station Name</th>
+                                                        <th class="border-0">Id</th>
                                                         <th class="border-0">Station Id</th>
                                                         <th class="border-0">Current Num.</th>
                                                         <th class="border-0">Daily Usage</th>
                                                         <th class="border-0">Weekly Usage</th>
-                                                        <th class="border-0">Monthly Usage</th>
                                                         <th class="border-0">Status</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
                                                         <td>1</td>
-                                                        <td>
-                                                            <div class="m-r-10"><img src="assets/images/product-pic.jpg" alt="user" class="rounded" width="45"></div>
-                                                        </td>
-                                                        <td>Pearse </td>
+                                                        <td>Heuston Station Central </td>
                                                         <td>000001 </td>
-                                                        <td>39</td>
-                                                        <td>63</td>
+                                                        <td>21</td>
+                                                        <td>40</td>
                                                         <td>139</td>
-                                                        <td>322 </td>
+                                                        <td>456 </td>
                                                         <td><span class="badge-dot badge-brand mr-1"></span>Over Use </td>
                                                     </tr>
                                                     <tr>
                                                         <td>2</td>
-                                                        <td>
-                                                            <div class="m-r-10"><img src="assets/images/product-pic-2.jpg" alt="user" class="rounded" width="45"></div>
-                                                        </td>
-                                                        <td>Drumcondra </td>
+                                                        <td>Heuston Bridge </td>
                                                         <td>000002 </td>
-                                                        <td>12</td>
-                                                        <td>32</td>
-                                                        <td>92</td>
-                                                        <td>255 </td>
-                                                        <td><span class="badge-dot badge-success mr-1"></span>Normal </td>
+                                                        <td>15</td>
+                                                        <td>34</td>
+                                                        <td>112</td>
+                                                        <td>391 </td>
+                                                        <td><span class="badge-dot badge-brand mr-1"></span>Over Use </td>
                                                     </tr>
                                                     <tr>
                                                         <td>3</td>
-                                                        <td>
-                                                            <div class="m-r-10"><img src="assets/images/product-pic-3.jpg" alt="user" class="rounded" width="45"></div>
-                                                        </td>
-                                                        <td>Spire </td>
+                                                        <td>Royal Hospital </td>
                                                         <td>000003 </td>
                                                         <td>23</td>
-                                                        <td>29</td>
-                                                        <td>82</td>
-                                                        <td>235 </td>
-                                                        <td><span class="badge-dot badge-success mr-1"></span>Normal </td>
+                                                        <td>33</td>
+                                                        <td>104</td>
+                                                        <td>411 </td>
+                                                        <td><span class="badge-dot badge-brand mr-1"></span>Over Use </td>
                                                     </tr>
                                                     <tr>
                                                         <td>4</td>
-                                                        <td>
-                                                            <div class="m-r-10"><img src="assets/images/product-pic-4.jpg" alt="user" class="rounded" width="45"></div>
-                                                        </td>
-                                                        <td>Trinity </td>
+                                                        <td>North Circular Road </td>
                                                         <td>000004 </td>
                                                         <td>21</td>
-                                                        <td>26</td>
-                                                        <td>72</td>
-                                                        <td>222 </td>
-                                                        <td><span class="badge-dot badge-success mr-1"></span>Normal </td>
+                                                        <td>33</td>
+                                                        <td>131</td>
+                                                        <td>471 </td>
+                                                        <td><span class="badge-dot badge-brand mr-1"></span>Over Use </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -175,34 +141,29 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>2018/11/11</td>
-                                                        <td>120 </td>
+                                                        <td>2019/04/05</td>
+                                                        <td>72 </td>
                                                         <td>CO2</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>2018/12/16</td>
-                                                        <td>110 </td>
+                                                        <td>2019/04/04</td>
+                                                        <td>71 </td>
                                                         <td>NO2</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>2018/12/26</td>
-                                                        <td>106 </td>
+                                                        <td>2019/04/03</td>
+                                                        <td>71 </td>
                                                         <td>CO2</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>2019/1/6</td>
-                                                        <td>103 </td>
-                                                        <td>NO</td>
+                                                        <td>2019/04/07</td>
+                                                        <td>67 </td>
+                                                        <td>NO2</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>2019/1/16</td>
-                                                        <td>119 </td>
-                                                        <td>CO</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2019/2/2</td>
-                                                        <td>132 </td>
-                                                        <td>O3</td>
+                                                        <td>2019/04/06</td>
+                                                        <td>64 </td>
+                                                        <td>CO2</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
