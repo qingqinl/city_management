@@ -1,6 +1,6 @@
 var myChart = echarts.init(document.getElementById('map'));
 
-$.getJSON('http://CityManagement2019-536194180.eu-west-1.elb.amazonaws.com/api/events', function(data) {
+$.getJSON('http://localhost:8000/api/events', function(data) {
 
   var convertData = function (data) {
   var res = [];
